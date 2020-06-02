@@ -1,0 +1,1467 @@
+*{
+margin:0px;
+padding:0px;
+}
+body{
+width:100%;
+flex-wrap:wrap;
+height:3100px;
+background:#ccc;
+font-family: 'PT Serif', serif;
+}
+ 
+a{
+text-decoration:none;	
+}
+
+
+/*Главный контейнер Headera*/
+#main-div{
+height:3.75rem;
+width:100%;
+background-color:#333;
+display:flex;
+}
+/*Логотип билайн в левом углу*/
+.logoBeeline{
+width:26%;
+padding:0.5em;
+}
+.logoHeader{
+background:#fff;
+flex-basis:15%;
+text-align:right;
+padding-right:10px;
+}
+
+/*Описываем меню*/
+.menu{
+flex-basis:70%;	
+background:#fff; 
+}
+.menu1ul{
+display:flex;
+justify-content:space-between;
+}
+.menu li:hover{
+color:#fff;
+}
+.menuitems{
+color:#000; 
+font-size:18px;
+background:#fff;
+padding:18px 32px 18px;
+display:flex;
+flex-direction:column;
+}
+
+.menu a{
+color:#444422;
+}
+
+/*При наведении на главные списки*/
+.menuitems:hover{
+background:#fcb045;
+transition-duration:0.2s;
+}
+	
+/*При наведении на списки в списках*/
+.menuitems li:hover{
+background:#fcb045;
+transition-duration:0.2s;
+color:#fff;
+}
+/*Скрываем списки в списках*/
+.menuitems ul{
+display:none;	
+}
+/*При наведении на главные списки*/
+.menu li:hover ul{
+display:block;
+}
+
+/*Список в списке 1*/
+.ulTar1{
+display:flex;
+flex-direction:column;
+position:absolute;	
+padding-top:40px;
+left:210px;
+min-width:150px;
+z-index:2121212121;
+}
+.menu1items {
+color:#000; 
+font-size:14px;
+background:#fff;
+padding:10px 10px 10px;
+list-style:none;
+border:0.1em solid #fcb045;
+}
+
+/*Список в списке 2*/
+.ulTar2{
+position:absolute;
+padding-top:40px;
+left:346px;
+min-width:150px;
+z-index:2121212121;
+}
+.menu2items{
+color:#000; 
+font-size:14px;
+background:#fff;
+padding:10px 10px 10px;
+list-style:none;
+border:1px solid #fcb045;
+}
+
+/*Список в списке 3*/
+.ulTar3{
+position:absolute;
+padding-top:40px;
+left:471px;	
+min-width:150px;
+z-index:2121212121;
+}
+.menu3items{
+color:#000; 
+font-size:14px;
+background:#fff;
+padding:10px 10px 10px;
+list-style:none;
+border:1px solid #fcb045;
+}
+
+/*Список в списке 4*/
+.ulTar4{
+position:absolute;
+padding-top:40px;
+right:486px;
+min-width:150px;
+z-index:2121212121;
+}
+.menu4items{
+color:#000; 
+font-size:14px;
+background:#fff;
+padding:10px 10px 10px;
+list-style:none;
+border:1px solid #fcb045;
+}
+
+/*Список в списке 5*/
+.ulTar5{
+position:absolute;
+padding-top:40px;
+right:293px;
+min-width:150px;
+z-index:2121212121;
+}
+.menu5items{
+color:#000; 
+font-size:14px;
+background:#fff;
+padding:10px 10px 10px;
+list-style:none;
+border:1px solid #fcb045;
+}
+/*Иконки поиска и аккаунта*/
+
+.searchAccount{
+flex-basis:15%;
+background:#444422;
+}
+.searchAccount ul{
+display:flex;
+justify-content:space-around;
+padding-top:18px;
+}
+.searchAccount li{
+list-style:none;
+display:inline-block;
+font-size:18px;
+}
+.searchAccount a{
+color:#fff;
+}
+
+/*UnderHeader*/
+/*Весь контейнер под хэдэром*/
+.underHeader{
+background:#999555;
+color:#fff;
+height:18.5%;
+width:100%;
+}
+/*Див-Текст в контейнере*/
+.underHeaderDiv{
+border:0.01em solid #fcb045;
+background:rgba(0,0,0,0.5);
+position:absolute;	
+padding:2rem;
+margin-top:11rem;
+margin-left:8rem;
+}
+/*Описываем стили для заголовка Близкие общаются бесплатно*/
+
+.underHeaderDiv h1{
+font-size:2rem;
+color:#fff;
+border-bottom:1px solid rgba(255,255,255, 0.5);	
+margin-bottom:15px;
+transition-duration:0.2s;
+}
+/*При наведении на Близкие общаются бесплатно*/
+.underHeaderDiv h1:hover{
+	color:#fcb045;
+}
+
+/*Описываем кнопку*/
+.buttonUnderHeader{
+padding:13px 18px;
+margin-top:15px;
+font-size:18px;
+background:#fcb045;
+border-radius:30px;
+border:0;
+border-bottom:0.2em solid #e28503;	
+transition-duration:0.3s;
+}
+
+/*Описывам цвет текста кнопки*/
+.buttonUnderHeader a{
+color:#000;
+}
+/*Описывам цвет кнопки при наведении*/
+.buttonUnderHeader:hover{
+background:#ffb31a;	
+border-bottom:0.2em solid #b06803;
+}
+
+/* Задаем высоту для секции 2 */
+.podVideo{
+background:#000;
+height:16%;
+width:100%;
+}
+/* Невидимый див секции 2 */
+.podVideoDiv{
+background:rgba(0,0,0,0.5);
+width:100%;
+height:100%;
+display:flex;
+	
+}
+/* див слева невидимого дива секции 2 */
+.dostavimSim {
+color:#fcb045;
+flex-basis:30%;
+background:#444422;
+}
+.dostavimSim h2{
+text-align:left;
+font-size:2.5em;
+padding-top:5rem;
+padding-left:5rem;
+font-family: 'Raleway', sans-serif;
+font-weight:light;
+}
+/* Цвет для нижнего текста левого дива */
+.dostavimSim p{
+color:#fff;
+padding-top:9.5rem;
+padding-left:7.7rem;
+}
+/*Позиционируем иконку мед брата*/
+.dostavimSim i{
+padding-top:9.5rem;
+padding-left:5rem;
+position:absolute;
+font-size:42px;
+}
+/* Цвет для ссылки "Доставим SIM" */
+.dostavimSim a{
+color:#fcb045;	
+}
+/* див справа невидимого дива секции 2 */
+.closePeople{
+background:#444422;
+flex-basis:70%;	
+display:flex;
+}
+/*цвет для Близкие люди 2\3\4 */
+.closePeople h2{
+color:#000;
+}
+
+/* 3 прямоугольника*/
+.closePeopleItems{
+margin-top:4.2rem;
+width:28%;
+height:70%;
+background:#fff;	
+margin-left:2em;
+border-radius:5px;
+color:#000; 
+}
+/*Белая полоска между текстом и 3-мя  прямоугольниками*/
+ 	
+
+/*Позиционируем текст "Доставим SIM"*/
+.closePeopleItems h2{
+text-align:center;	
+padding-top:10px;
+}
+/*Позиционируем текс "Курьеры соблюдают все меры безопасности "*/
+.closePeopleItems p{
+display:inline-block;
+padding-top:4.1em;
+}
+
+/* Картинка для Близкие люди */
+.gigmin{
+position:absolute;
+width:12%;
+height:30%;
+margin-left:2.8rem;
+margin-top:0.3rem;
+}
+/* Для цифры 700 */
+.h700{
+font-size:45px;	
+font-weight:bold;
+padding-left:1em;
+color:#000;
+}
+/* Для слова "Мес" */
+.mes{
+font-size:1.2em;
+color:#000;	
+}
+/* Для ссылки под 700/мес */
+.bolwe{ 
+background:#fcb045;
+padding:0.5rem 4rem;
+font-size:1.3em;
+border:0;
+z-index:-516555;
+border-radius:5px;
+transition-duration:0.2s;
+}
+
+.bolwe:hover{
+background:#fc9f1d;	
+}
+
+/*Красим ссылку Узнать больше*/
+.bolwe a {
+color:#000;	
+}
+
+/*Секция 3 Холоп*/
+.holop{
+background:#999555;
+width:100%;
+height:16%;
+}
+
+/*Объявлеяем невидимый Див для позиционирования по горизонтали*/
+.holopDiv{
+display:flex;
+width:100%;
+height:100%;
+}
+
+/*Размер для левого Дива Холоп*/
+.leftHolop{
+flex:1.2;	
+text-align:left;
+}
+/*Размер для правого Дива Холоп*/
+.rightHolop{
+flex:1;	
+}
+/*Позиционирование дива в котором текст */
+.h1Holop{
+display:inline-block;
+color:#fff;
+margin-left:8.7em;
+margin-top:6.9em;	
+}
+
+/*Стили для полоски снизу и размер текста*/
+.h1Holop h1{
+border-bottom:1px solid rgba(255,255,255, 0.5);
+font-size:2.3em;
+transition-duration:0.2s;
+}
+/*Класс для слова С Билайн ТВ*/
+.holopH1{
+display:inline-block;
+border-bottom:0.5em solid #fff;	
+}
+/*Цвет при наведении на див в котором текст h1*/
+.h1Holop:hover{
+color:#ffc34d;	
+}
+/*Цвет для текста под h1, и позиционирвание*/
+.leftHolop p{
+color:#fff;	
+margin-top:1.2em;
+margin-left:8.7em;
+}
+
+/*Описываем стили для кнопки Холоп*/
+.buttonHolop{
+font-size:1em;
+padding:1em 2em;
+margin-left:8.7em;
+margin-top:1.2em;	
+border-radius:25px;
+background:#ffc34d;
+border:0;
+border-bottom:0.25em solid #ffaa00;
+transition-duration:0.3s;
+}
+/*Стили для кнопки Смотреть! в диве с фото Холоп*/
+.buttonHolop:hover{
+background:#ffb31a;	
+border-bottom:0.25em solid #cc8800;
+}
+
+/*размер для картинки Холоп*/
+.imgHolop{
+width:75%;
+margin-top:5em;
+margin-left:4em;
+}
+/*Див для лого под фото Холоп*/
+.divLogoHolop{
+width:75%;
+height:25%; 
+margin-left:4em;	
+}
+/*UL Для лого под фото Холоп*/
+.ulHolop{
+display:flex;
+flex-direction:row;	
+justify-content:space-between;
+margin-top:1rem;
+}
+/*Убираем точки с лого под фото Холоп*/
+.logoHolop{ 
+list-style:none;	
+}
+/*Задаем размер для лого под фото Холоп*/
+.imgLogoHolop{
+width:4rem;
+}
+
+
+
+/*Описываем стили для секции 3 Боитесь разбить экрани & коронавирус*/
+.ensurance{
+width:100%;	
+height:16%;
+background:#444422;
+display:flex;
+flex-direction:row;
+}
+/*Описываем стили и положения текста H1*/
+.h1Ensurance{
+flex:1;
+margin-top:7.5em;
+display:inline-block;
+color:#fff;	
+margin-left:8.7em;
+}
+/*Стиль для полоски снизу и размеер шрифта*/
+.h1Ensurance h1{
+border-bottom:1px solid rgba(255,255,255, 0.5);
+font-size:2em;
+transition-duration:0.2s;
+}
+/*Полоска для слова смартфон*/
+.smartphone{
+display:inline-block;
+border-bottom:1px solid white;
+}
+/*Стили при наведении на H1*/
+.h1Ensurance:hover{
+color:#fcb045;	
+}
+/*Стили для слов под h1*/
+.ensuranceText p{
+color:#fff;
+font-size:1em;
+margin-left:8.7em;
+margin-top:1em;
+}
+/*стили для кнопки Защитить экран*/
+.ensuranceButton{
+font-size:1em;
+padding:1em 2em;
+margin-left:8.7em;
+margin-top:1.2em;	
+border-radius:25px;
+background:#ffc34d;
+border:0;
+border-bottom:0.25em solid #ffaa00;	
+transition-duration:0.3s;
+}
+/*Стили для кнопки Защитить экран при наведении*/
+.ensuranceButton:hover{
+background:#ffb31a;	
+border-bottom:0.25em solid #cc8800;	
+} 
+
+/*описываем ширину и цвет для дива с коронавирусом*/
+.covid{
+flex:1;
+background:#444422;
+}
+/*Позиционируем див с текстом Коронавирус.НЕТ*/
+.h1Covid{	
+margin-top:7.5em;
+display:inline-block;
+color:#fff;	
+margin-left:8.7em;
+}
+/*Задаем размер шрифту и подчеркмвание Коронавирус.НЕТ*/
+.h1Covid h1{
+border-bottom:1px solid rgba(255,255,255, 0.5);
+font-size:2em;
+display:inline-block;
+transition-duration:0.2s;
+} 
+/*Цвет h1 при наведении на див*/
+.h1Covid:hover{
+color:#fcb045;	
+}
+/*Позиционирование,размер, и цвет текста под Коронавирус.НЕТ*/ 
+.covid p{
+color:#fff;
+font-size:1em;
+margin-left:8.7em;
+margin-top:3.69em;
+}
+/*Размер,позиционирование,Цвет кнопки Оформить полис*/
+.covidButton{
+font-size:1em;
+padding:1em 2em;
+margin-left:8.7em;
+margin-top:1.2em;	
+border-radius:25px;
+background:#ffc34d;
+border:0;
+border-bottom:0.25em solid #ffaa00;	
+transition-duration:0.3s;
+} 
+/*Цвет кнопки при наведении*/
+.covidButton:hover{
+background:#ffb31a;	
+border-bottom:0.25em solid #cc8800;	
+} 
+
+/*Домашний интрнет с ноутбуком*/
+
+
+/*Секция 4*/
+.homeInternet{
+width:100%;	
+height:16%;
+background:#999555;
+display:flex;
+flex-direction:row;
+}
+
+/*описываем ширину и цвет для дива с Подключите домашний интернет*/
+.homeInternetDiv{
+flex:1;
+background:#999555;
+}
+/*Позиционируем h1 Подключите домашний интренет с Билайн*/
+.h1HomeInternet{	
+margin-top:9.5em;
+display:inline-block;
+color:#fff;	
+margin-left:8.7em;
+}
+/*Создаем полоску под h1 Подключите домашний интернет*/
+.h1HomeInternet h1{
+border-bottom:1px solid rgba(255,255,255, 0.5);
+font-size:2em;
+display:inline-block;
+transition-duration:0.2s;
+} 
+/*Цвет текста Подключите домашний интернет при наведении*/
+.h1HomeInternet:hover{
+color:#fcb045;	
+}
+/*Позиционируем, указывам размер, цвет кнопке Перейти к тарифам*/
+.homeInternetButton{
+font-size:1em;
+padding:1em 2em;
+margin-left:8.7em;
+margin-top:1.2em;	
+border-radius:25px;
+background:#ffc34d;
+border:0;
+border-bottom:0.25em solid #ffaa00;
+transition-duration:0.3s;	
+} 
+/*Цвет при наведении на кнопку Перейти к тарифам*/
+.homeInternetButton:hover{
+background:#ffb31a;	
+border-bottom:0.25em solid #cc8800;	
+}
+/*Див где лежит картинка Ноутбука*/ 
+.laptopDiv{
+flex:1;
+background:#999555;
+}
+/*Позиционирование Дива где лежит Ноутбук*/
+.imgHomeInternetDiv{
+margin-top:6em;
+margin-left:3em;	
+}
+/*Размер для картинки Ноутбука*/
+.imgHomeInternet{
+width:75%;	
+}
+/*Див в котором лежат иконки Ноутбука*/ 
+.divLogoHomeInternet1{
+background:#fff;
+position:absolute;
+width:22%;
+margin-left:50.4em;
+margin-top:9.5em;
+}
+/*Позиционирование иконок в Ноутбуке*/
+.divLogoHomeInternet1 ul{
+display:flex;
+justify-content:space-between;
+list-style:none;
+}
+/*Размер для первой полосы иконок*/
+.logoHome1{
+font-size:2.4em;
+color:olive;	
+}
+/*Див в котором лежит вторая полоса иконок Ноутбука*/
+.divLogoHomeInternet2{
+background:#fff;
+position:absolute;
+width:22.5%;
+margin-left:50.4em;
+margin-top:14.9em;
+}
+/*Позиционирование второй полосы иконок в Ноутбуке*/
+.divLogoHomeInternet2 ul{
+display:flex;
+justify-content:space-between;
+list-style:none;
+}
+/*Размер для второй полосы иконок*/
+.logoHome2{
+font-size:2.4em;
+color:green;	
+}
+/*Цвет первой иконки КАЛЕНДАРЬ*/
+#logoHomeId1{
+	color:#000;
+}
+/*Цвет второй иконки ДЖОСТИЙ*/
+#logoHomeId2{
+	color:yellow;
+}
+/*Цвет третьей иконки КОНВЕРТ*/
+#logoHomeId3{
+	color:333555;
+}
+/*Цвет четвертой иконки МУЗЫКА*/
+#logoHomeId4{
+	color:red;
+}
+/*Цвет пятой иконки МЯЧ*/
+#logoHomeId5{
+	color:brown;
+}
+/*Цвет шестой иконки КОЛПАК*/
+#logoHomeId6{
+	color:#001a33;
+}
+/*Цвет седьмой иконки ТЕЛЕЖКА*/
+#logoHomeId7{
+	color:#006666;
+}
+/*Цвет восьмой иконки ПОГОДА*/
+#logoHomeId8{
+	color:#ff9933;
+}
+
+/*Секция 5 VISA*/
+.visaSection{
+	display:flex;
+	width:100%;
+	background:#e0e0d1;
+	height:18%;
+}
+
+
+
+/*Позиционируем, определяем размер дива слева Добро пожаловать */
+.welcome{
+flex-basis:38%;
+height:55%;
+margin-left:11%;
+margin-top:5%;
+background:#fff;
+}
+/*Див в котором лежат текст добро пожаловать и текст под ним*/
+.welcomeh1P{
+background:#fff;	
+}
+/*Стили и позиционирование для h1 Добро пожаловать */
+.welcomeh1P h1{
+font-size:1.7em;
+padding-top:1em;	
+padding-left:1em;
+color:#0d0d0d;
+background:#fff;	
+}
+/*Стили и позиционирование для Р под добро пожаловать*/
+.welcomeh1P p{
+font-size:0.9em;
+padding-top:1em;	
+padding-left:2em;
+color:#404040;
+background:#fff;	
+}
+/*Див для инпута Телефон и Логин*/
+.welcomeForm{
+background:#fff;
+margin-top:1em;
+}
+/*Позиционирование, размер, и края для инпута Телефон и Логин*/
+.welcomeInput{
+padding:0.8em;
+margin-left:2em;
+width:82%;
+font-size:0.8em;
+border-radius:0.3em;
+border:0.1em solid grey;
+transition-duration:0.2s;
+}
+/*Края для инпута Телефон и Логин при наведении*/
+.welcomeInput:hover{
+border:0.1em solid #fcb045;	
+}
+/*Див в котором кнопка Далее */
+.welcomeButtonDiv{
+background:#fff;
+}
+/*Стили, позиционирование, тени для кнопки Далее*/
+.welcomeButton{
+font-size:1em;
+padding:0.5em 1.5em;	
+border-radius:2.5em;
+margin-left:1.7em;	
+margin-top:1em;	
+border:0.05em solid grey;
+border-bottom:0.20em solid grey;
+color:grey;
+background:#fff;
+transition-duration:0.3s;
+}
+/*Цвет, края для кнопки Далее при наведении*/
+.welcomeButton:hover{
+color:#000;
+border:0.05em solid #ffbb33;
+background:#ffbb33;	
+border-bottom:0.20em solid #cc8800;		
+}
+/*Позиционирование Дива в котором лежит Как получить логин\пароль*/
+.welcomeP{
+background:#fff;
+margin-top:1.7em;	
+margin-left:1.7em;	
+}
+/*Нижняя черта для текста Как получить пароль\логин*/
+.welcomeP p{
+text-decoration:underline;	
+}
+/*Цвет для текста как получить пароль\логин*/
+.welcomeP a{
+color:#0d0d0d;
+transition-duration:0.2s;	
+}
+/*Цвет для текста как получить пароль\логин при наведении*/
+.welcomeP a:hover{
+color:#ffbb33;	
+}
+
+/*Позиционирование Дива Пополнение счёта*/
+.visa{
+flex-basis:38%;
+height:75%;
+margin-top:5%;
+margin-left:2.5%;
+background:#fff;
+}
+/*Див в котором лежит h1 Пополнение счёта и Лого Visa*/
+.visah1Logo{
+width:100%;
+background:#fff;
+display:flex;
+height:17.8%;
+}
+/*Див текста Пополнение счёта*/
+.visaH1{
+flex-basis:65%;	
+background:#fff;
+}
+/*Позиционирование текста Пополнение счёта*/
+.visaH1 h1{
+font-size:1.7em;
+padding-top:1em;	
+padding-left:1em;
+color:#0d0d0d;	
+}
+
+/*Див в котором лежат Лого Visa & Mastercard*/
+.visaLogo{
+flex-basis:35%;
+background:#fff;	
+}
+
+/*Задаем размер Лого Visa*/
+.logoVisa{
+padding-top:0.7em;
+padding-left:1.5em;	
+width:40%;	
+}
+/*Задаем размер лого Mastercard*/
+.logoMastercard{	
+width:20%;
+padding-bottom:1.4em;	
+}
+/*Контейнер в котором лежат две кнопки Переключатели*/
+.visaSwitchButton{
+background:#fff;	
+}
+/*Див в котором лежат две кнопки переключатели*/
+.switchButton{
+background:#fff;
+}
+/*Первая кнопка переключателя Телефон*/
+/*Стили для кнопки Телефон*/
+.visaTelephoneButton{
+font-size:0.8em;
+padding:0.8em 2.2em;		
+border-radius:3em 0em 0em 3em;
+margin-left:1.7em;
+margin-top:0.5em;	
+border:0.05em solid grey;
+border-bottom:0.20em solid grey;
+color:#0d0d0d;
+background:#fff;
+transition-duration:0.1s;		
+}
+/*Стили для кнопки Телефон при наведении*/
+.visaTelephoneButton:hover{
+color:#000;
+border:0.05em solid #ffbb33;
+background:#ffbb33;	
+border-bottom:0.20em solid #cc8800;
+}
+
+/*Вторая кнопка переключателя Интернет и ТВ*/
+/*Стили для кнопки Интернет и ТВ*/
+.visaInternetButton{
+position:absolute;
+font-size:0.8em;
+padding:0.8em 1.4em;	
+border-radius:0em 3em 3em 0em;
+margin-right:1em;	
+margin-top:0.5em;	
+border:0.05em solid grey;
+border-bottom:0.20em solid grey;
+color:#0d0d0d;
+background:#fff;	
+transition-duration:0.1s;	
+}
+/*Стили для кнопки Интернет и ТВ при наведении*/
+.visaInternetButton:hover{
+color:#000;
+border:0.05em solid #ffbb33;
+background:#ffbb33;	
+border-bottom:0.20em solid #cc8800;
+}
+/*Позиционируем контейнер в котором находятся Номер телефона, Сумма, Без комиссии и их Inputы*/
+.visaContainerNomer{
+background:#fff;
+width:100%;	
+display:flex;
+margin-top:2em;
+}
+/*Позиционируем Див в котором находятся Номер телефона и Input +7*/
+.visaNomerInput{
+background:#fff;
+flex-basis:55%;
+}
+/*Позиционирование, стиль и размер для Номер телефона получателя*/
+.visaNomerInput span{
+font-size:1em;
+color:grey;
+margin-left:1.6em;	
+}
+/*Позиционирование и стиль для Input +7*/
+.inputNomer{
+padding:0.8em;
+margin-top:0.5em;
+margin-left:2em;
+width:70%;
+font-size:0.8em;
+border-radius:0.3em;
+border:0.1em solid grey;
+transition-duration:0.3s;		
+}
+/*Подсветка краёв +7 при наведении*/
+.inputNomer:hover{
+border:0.1em solid #fcb045;
+transition-duration:0.3s;	
+}
+/*Позиционируем и задаем ширину Диву в котором лежит сумма и его Input*/
+.visaSummaInput{
+background:#fff;
+flex-basis:20%;	
+}
+/*Размер и цвет текста Сумма */
+.visaSummaInput span{
+font-size:1em;
+color:grey;	
+}
+/*Позиционирование, размер, края Inputa под Суммой*/
+.inputSumma{
+padding:0.8em;
+margin-top:0.5em;
+margin-left:0;
+width:70%;
+font-size:0.8em;
+border-radius:0.3em;
+border:0.1em solid grey;
+transition-duration:0.3s;		
+}
+/*Подсветка краёв Inputa Суммы при наведении*/
+.inputSumma:hover{
+border:0.1em solid #fcb045;
+}
+/*Позиционирование и ширина для Дива в котором лежит 100-15000 рублей*/
+.visa100Without{
+flex-basis:20%;	
+}
+/*Позиционирование текста 100-15000 рублей*/
+.visa100Without p{
+font-size:0.8em;
+margin-top:2.4em;
+margin-left:1.2em;	
+}
+/*Див в котором лежат Нажимая "Pay", Оплата G PAY, Получить доверительный платеж*/
+.visaOplataPButtonX2P{
+background:#fff;
+}
+/*Див в котором лежит текст нажимая "PAY"*/
+.visaNajimaya{
+background:#fff;
+margin-top:1em;
+margin-left:1.6em;	
+}
+/*Описываем стили для текста Нажимая "Pay" вы принимаете все условия */
+.visaNajimaya p {
+font-size:0.9em;
+font-style:italic;
+color:grey;	
+}
+/*Цвет, нижняя черта слова Условия */
+.visaNajimaya a {
+color:grey;	
+text-decoration:underline;
+transition-duration:0.1s;	
+}
+/*Цвет, нижняя черта слова Условия при наведении */
+.visaNajimaya a:hover {
+color:#ffbb33;	
+text-decoration:underline;
+}
+/*Див в котором лежат кнопки Оплатить картой или G PAY*/
+.gPayButton2{
+background:#fff;
+display:flex;
+flex-direction:column;
+margin-top:1em;
+}
+/*Позиционирование, ширина, цвет, размер кнопки Оплатить через G PAY*/
+.visaGooglePayButton{
+font-size:1em;
+margin-left:1.6em;
+padding:0.6em 2em;
+background:#000;
+color:#fff;	
+width:90%;
+border:0;
+border-radius:1.5em;
+}
+/*Позиционирование, размер, цвет, тень для кнопки Оплатить картой*/
+.visaCreditcardButton{
+font-size:1em;
+margin-top:0.6em;
+margin-left:1.6em;
+padding:0.6em 2em;
+background:#fff;
+color:grey;	
+width:90%;
+border:0.05em solid grey;
+border-radius:1.5em;
+border-bottom:0.20em solid grey;
+transition-duration:0.3s;	
+}
+/*Цвет для кнопки Оплатить картой при наведении */
+.visaCreditcardButton:hover{
+color:#000;
+border:0.05em solid #ffbb33;
+background:#ffbb33;	
+border-bottom:0.20em solid #cc8800;	
+transition-duration:0.3s;	
+}
+/*Див в котором лежит текст Или получить доверительный платеж*/
+.visaIli{
+background:#fff;
+margin-top:1em;	
+margin-left:1.6em;
+}
+/*Цвет, размер для (Или) получить доверитльный платеж*/
+.visaIli p{
+color:#000;
+font-size:0.9em;	
+}
+/*Цвет для Получить доверительный платеж*/
+.visaIli a{
+color:#000;	
+text-decoration:underline;
+transition-duration:0.2s;
+}
+/*Цвет для Получить доверительный платеж при наведении*/
+.visaIli a:hover{
+color:#ffbb33;	
+}
+
+
+
+
+/*Секция 6 Над Футером*/
+.nadFooterom{
+background:#282828;
+width:100%;
+height:10%;
+display:flex;
+}
+/* Первый Див секции 6 в котором лежат Частным лицам и ссылки*/
+.nadFooteromChastnim{
+background:#282828;
+width:17%;
+margin-left:11%;
+}
+/*Див в которм лежит текст Частным лицам*/
+.nadFooteromChastnimH2Div{
+background:#282828;	
+}
+/*Размер, цвет и позиционировании текста Частным лицам */
+.nadFooteromChastnimH2Div h2{
+font-size:1.3em;
+padding-left:1em;
+padding-top:1em;
+color:#fff;	
+}
+/*Див в котором лежат ссылки под Частным лицам*/
+.nadFooteromNewsDiv{
+background:#282828;
+margin-top:0.9em;
+}
+/*Расположение по вертикали для ссылок*/
+.nadFooteromA{
+color:#fff;
+display:inline-block;
+border-bottom:0.05em solid rgba(255,255,255, .6);	
+}
+/*Цвет текста и Нижней полосы всех ссылок*/
+.nadFooteromA:hover{
+color:#ffbb33;
+border-bottom:0.05em solid rgba(255, 187, 51, .6);	
+}
+/*Позиционирование и размер для ссылок под текстом Частным лицам */
+.nadFooteromNewsDiv p{
+font-size:0.9em;
+margin-left:1.4em;
+margin-top:0.15em;	
+}
+/*Второй Див секции 6 в котором лежат 2 Дива Бизнесу и Прессе*/
+.nadFooteromBusinessPress{
+background:#282828;
+width:17%;
+margin-left:2%;
+display:flex;
+flex-direction:column;
+}
+/*Див в котором лежит текст Бизнесу и ссылки */
+.nadFooteromBusinessDiv{
+background:#282828;
+flex:1;	
+}
+/*Див в котором лежит текст Бизнесу*/
+.nadFooteromBusinessH2Div{
+background:#282828;	
+}
+/*Размер, позиционирование и цвет текста Бизнес*/
+.nadFooteromBusinessH2Div h2{
+font-size:1.3em;
+padding-left:1em;
+padding-top:1em;
+color:#fff;	
+}
+/*Див в котором лежат ссылки под текстом Бизнес*/
+.nadFooteromMobileInternetDiv{
+background:#282828;	
+margin-top:0.9em;
+}
+/*Размер и позиционирование ссылок под текстом Бизнес*/
+.nadFooteromMobileInternetDiv p{
+font-size:0.9em;
+margin-left:1.4em;
+margin-top:0.15em;	
+}
+/*Див в котором лежат текст Прессе и ссылки */
+.nadFooteromPressDiv{
+background:#282828;
+flex:1;	
+}
+/*Див в котором лежит текст Прессе*/
+.nadFooteromPressH2Div{
+background:#282828;	
+}
+/*Размер, позиционирование и цвет для текст Прессе*/
+.nadFooteromPressH2Div h2{
+font-size:1.3em;
+padding-left:1em;
+padding-top:1em;
+color:#fff;	
+}
+/*Див в котором лежат ссылки под текстом Прессе*/
+.nadFooteromPressCenterDiv{
+background:#282828;	
+margin-top:0.9em;	
+}
+/*Размер позициониорвание ссылок под текстом Прессе*/
+.nadFooteromPressCenterDiv p{
+font-size:0.9em;
+margin-left:1.4em;
+margin-top:0.15em;
+}
+/*Третий Див секции 6 в котоором лежат текст Партнерам и ссылки */
+.nadFooteromPartneram{
+background:#282828;
+width:17%;
+margin-left:2%;
+}
+/*Див в котором лежит текст Партнерам*/
+.nadFooteromPartneramH2Div{
+background:#282828;	
+}
+/*Размер, позиционирование и цвет текста Партнерам*/
+.nadFooteromPartneramH2Div h2{
+font-size:1.3em;
+padding-left:1em;
+padding-top:1em;
+color:#fff;		
+}
+/*Див в котором лежат ссылки под текстом Партнерам*/
+.nadFooteromArendaPosiciyDiv{
+background:#282828;	
+margin-top:0.9em;
+}
+/*Размер и позиционирование ссылок под текстом Партнерам*/
+.nadFooteromArendaPosiciyDiv p{
+font-size:0.9em;
+margin-left:1.4em;
+margin-top:0.15em;
+}
+/*Четвертый Див секции 6 в котором лежат текст О компании и ссылки*/
+.nadFooteromOKompanii{
+background:#282828;
+width:17%;
+margin-left:2%;
+}
+/*Див в котором лежит текст О компании*/
+.nadFooteromOKompaniiH2Div{
+background:#282828;	
+}
+/*Размер, позиционирование и цвет текста О компании*/
+.nadFooteromOKompaniiH2Div h2{
+font-size:1.3em;
+padding-left:1em;
+padding-top:1em;
+color:#fff;		
+}
+/*Див в котором лежат ссылки под текстом О компании*/
+.nadFooteromOKompaniiDiv{
+background:#282828;
+margin-top:0.9em;
+}
+/*Размер и позиционирование ссылок под текстом О компании*/
+.nadFooteromOKompaniiDiv p{
+font-size:0.9em;
+margin-left:1.4em;
+margin-top:0.15em;
+}
+/*Див в котором лежат Лого флага России и текст RU*/
+.nadFooteromLogoRus{
+position:absolute;
+background:#282828;
+display:flex;
+margin-left:71.5em;
+margin-top:17em;
+}
+/*Цвет и размер Лого Флаг России */
+.nadFooteromFlagLogo{
+width:1em;
+}
+/*Стили, размер и округление Флага России*/
+.nadFooteromImg{
+width:1.3em;
+border-radius:0.2em;	
+}
+/*Размер, позиционирование и цвет текста RU*/
+.nadFooteromRU{
+font-size:0.8em;
+color:grey;
+padding-left:0.3em;
+}
+
+
+
+
+
+/*Footer*/
+.footer{
+background:#282828;
+width:100%;
+height:7%;
+}
+/*Див в котором лежит весь Футер*/
+.footerDiv{
+width:100%;
+height:100%;
+background:#282828;	
+display:flex;
+flex-direction:column;
+}
+/*Див в котором лежат Лого и Студия Мамуритто*/
+.footerLogoArtLebDiv{
+width:100%;
+display:flex;
+flex-direction:row;
+background:#282828;	
+}
+/*Див в котором лежат Лого*/
+.footerLogoDiv{
+flex-basis:27%;
+background:#282828;
+margin-left:12%;
+margin-top:1em;	
+}
+/*UL Лого футера*/
+.footerUlLogo{
+display:flex;
+justify-content:space-around;	
+}
+/*Убираем точки в ЛИ логотипах*/
+.footerUlLogo li{
+list-style:none;	
+}
+
+/*Стили для всех ЛОГО*/
+.footerLiLogo{
+background:#282828;
+color:white;
+width:2em;
+height:2em;
+font-size:1.2em;
+border-radius:50%;
+}
+.footerLiLogo:hover{
+background:blue;	
+}
+/*Размер и позиционирование ЛОГО Facebook*/
+#facebookLogo{	
+font-size:1.2em;
+margin-left:0.5em;
+margin-top:0.31em;
+}
+/*Задняя подсветка при наведении на ЛОГО FACEBOOK*/
+#footerLiLogo1:hover{
+background:#3b5998;	
+}
+
+/*Размер и позиционирование ЛОГО TWITTER */
+#twitterLogo{
+font-size:1.2em;
+margin-left:0.35em;
+margin-top:0.31em;	
+}
+/*Задняя подсветка при наведении на ЛОГО TWITTER*/
+#footerLiLogo2:hover{
+background:#1DA1F2;	
+}
+
+/*Размер и позиционирование ЛОГО VK */
+#vkLogo{
+font-size:1.2em;
+margin-left:0.25em;
+margin-top:0.31em;	
+}
+/*Задняя подсветка при наведении на ЛОГО VK*/
+#footerLiLogo3:hover{
+background:#4680C2;	
+}
+
+/*Размер и позиционирование ЛОГО YOUTUBE */
+#youtubeLogo{
+font-size:1.2em;
+margin-left:0.25em;
+margin-top:0.31em;	
+}
+/*Задняя подсветка при наведении на ЛОГО YOUTUBE*/
+#footerLiLogo4:hover{
+background:#ff0000;	
+}
+
+/*Размер и позиционирование ЛОГО ODNOKLASSNIKI */
+#okLogo{
+font-size:1.2em;
+margin-left:0.48em;
+margin-top:0.3em;	
+}
+/*Задняя подсветка при наведении на ЛОГО ODNOKLASSNIKI*/
+#footerLiLogo5:hover{
+background:#ed812b;	
+}
+
+/*Стили для ЛОГО INSTAGRAM*/
+#instagramLogo{
+font-size:1.2em;
+margin-left:0.35em;
+margin-top:0.31em;	
+}
+#footerLiLogo6:hover{
+background: #1a2a6c; /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #1a2a6c, #b21f1f, #fdbb2d); /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #1a2a6c, #b21f1f, #fdbb2d); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */ 	
+}
+
+ /*Размер и позиционирование ЛОГО TELEGRAM */
+#telegramLogo{
+font-size:1.2em;
+margin-left:0.31em;
+margin-top:0.31em;	
+}
+/*Задняя подсветка при наведении на ЛОГО TELEGRAM*/
+#footerLiLogo7:hover{
+background:#0088cc;	
+}
+
+
+
+
+
+
+/*Див в котором лежат картинка Лебедев и текст студия Мамуритто*/
+.footerArtLebTextDiv{
+flex-basis:40%;
+background:#282828;
+display:flex;
+margin-left:20%;
+margin-top:0.7em;
+}
+/*Див в котором лежит картинка АРТ.ЛЕБЕДЕВ*/
+.footerArtLeb{
+flex-basis:40%;	
+background:#282828;
+}
+/*Класс картинки АРТ.ЛЕБЕДЕВ*/
+.footerArtLebImg{
+width:60%;	
+padding-left:5em;
+}
+/*Див в котором лежит текст Студия Лебедева и Информация о сайте*/
+.footerArtLebTextP{
+flex-basis:60%;
+background:#282828;	
+}
+/*Размер и цвет для текста Дизайн-Студия Мамуритто*/
+.footerArtLebTextP p{
+font-size:0.9em;
+color:#fff;	
+}
+/*Размер, нижнее черточка и цвет для текста Студия Мамуритто и информация о сайте */
+.footerArtLebA{
+font-size:0.9em;
+border-bottom:0.05em solid rgba(255, 255, 255, .6);
+color:#fff;	
+}
+/*Цвет текста и нижнего подчеркивания для текста Студия Мамуритто и информация на сайте при наведении*/
+.footerArtLebA:hover{
+color:#ffbb33;
+border-bottom:0.05em solid rgba(255, 187, 51, .6);		
+}
+/*Див в котором лежит текст Футера*/
+.footerTextDiv{
+background:#282828;
+width:70%;
+height:80%;
+margin-left:12%;	
+}
+/*Размер текста Футера*/
+.footerTextDiv p{
+font-size:0.65em;
+color:#ccccb3;	
+}
+
+/*Див в котором лежит первый текст Футера*/
+.footerTextDiv1{
+background:#282828;	
+margin-top:0.9em;
+}
+/*Див в котором лежит второй текст Футера*/
+.footerTextDiv2{
+background:#282828;
+margin-top:0.6em;	
+}
+/*Див в котором лежит третий текст Футера*/
+.footerTextDiv3{
+background:#282828;
+margin-top:0.6em;	
+}
+/*Стили для всех ссылок в тексте Футера*/
+.footerTextDiv a{
+color:#ccccb3;	
+text-decoration:underline;
+}
+/*Цвет текста Футера при наведении*/
+.footerTextDiv a:hover{
+color:#ffbb33;	
+}
+
+
+
+
